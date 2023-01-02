@@ -31,7 +31,7 @@ var LoveDays = /** @class */ (function () {
      */
     LoveDays.prototype.getXiangShiDate = function () {
         var date = new Date(this.xiangShiDateTime);
-        return date.getFullYear() + '-' + date.getMonth + '-' + date.getDate();
+        return date.getFullYear() + '-' + date.getMonth() + '-' + date.getDate();
     };
     /**
     * 获取官宣日期
@@ -39,7 +39,7 @@ var LoveDays = /** @class */ (function () {
     */
     LoveDays.prototype.getGuanXuanDate = function () {
         var date = new Date(this.guanXuanDateTime);
-        return date.getFullYear() + '-' + date.getMonth + '-' + date.getDate();
+        return date.getFullYear() + '-' + date.getMonth() + '-' + date.getDate();
     };
     /**
      * 获取已相识的天数

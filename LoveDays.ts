@@ -47,7 +47,7 @@ class LoveDays {
      */
     public getXiangShiDate() {
         const date = new Date(this.xiangShiDateTime)
-        return date.getFullYear() + '-' + date.getMonth + '-' + date.getDate()
+        return date.getFullYear() + '-' + date.getMonth() + '-' + date.getDate()
     }
     /**
     * 获取官宣日期
@@ -55,7 +55,7 @@ class LoveDays {
     */
     public getGuanXuanDate() {
         const date = new Date(this.guanXuanDateTime)
-        return date.getFullYear() + '-' + date.getMonth + '-' + date.getDate()
+        return date.getFullYear() + '-' + date.getMonth() + '-' + date.getDate()
     }
     /**
      * 获取已相识的天数
