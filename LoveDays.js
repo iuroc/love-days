@@ -22,8 +22,8 @@ var LoveDays = /** @class */ (function () {
     LoveDays.prototype.getDays = function (startTimestamp, endTimestamp) {
         var timestamp = endTimestamp - startTimestamp;
         var days = timestamp / (1000 * 60 * 60 * 24);
-        var daysLimit = Math.round(days * 10) / 10;
-        return daysLimit;
+        var daysLimit = (days * 1.0).toFixed(1);
+        return parseFloat(daysLimit);
     };
     /**
      * 获取相识日期

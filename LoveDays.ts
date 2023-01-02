@@ -38,8 +38,8 @@ class LoveDays {
     private getDays(startTimestamp: number, endTimestamp: number): number {
         const timestamp = endTimestamp - startTimestamp
         const days = timestamp / (1000 * 60 * 60 * 24)
-        const daysLimit = Math.round(days * 10) / 10
-        return daysLimit
+        const daysLimit = (days * 1.0).toFixed(1)
+        return parseFloat(daysLimit)
     }
     /**
      * 获取相识日期
