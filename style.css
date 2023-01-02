@@ -1,0 +1,40 @@
+:root {
+    --main-color: #ff6575
+}
+
+.main {
+    margin: calc(5% + 10px) auto;
+    padding: 0 20px;
+    max-width: 600px;
+}
+
+.box {
+    border: 3px solid var(--main-color);
+    border-radius: 15px;
+}
+
+.hr {
+    border-bottom: 1px solid var(--main-color);
+    margin: 20px 30px;
+}
+
+.text-center {
+    text-align: center;
+    color: var(--main-color);
+}
+
+.xiangShi,
+.guanXuan {
+    color: var(--main-color);
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.guanXuan {
+    margin-bottom: 40px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
