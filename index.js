@@ -1,5 +1,5 @@
 /// <reference path = "LoveDays.ts" />
-var loveDays = new LoveDays('2022-11-22', '2022-12-03');
+var loveDays = new LoveDays('2022-11-22T12:00:00', '2022-12-03T23:00:00');
 var xiangShuEle = document.querySelector('.xiangShi');
 var guanXuanEle = document.querySelector('.guanXuan');
 if (xiangShuEle && guanXuanEle) {
