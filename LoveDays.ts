@@ -2,11 +2,11 @@ class LoveDays {
     /**
      * 相识日期，格式：2022-11-22
      */
-    private xiangShiDate: string
+    private xiangShiDateTime: string
     /**
      * 官宣日期，格式：2022-12-03
      */
-    private guanXuanDate: string
+    private guanXuanDateTime: string
     /**
      * 已相识的天数
      */
@@ -17,15 +17,15 @@ class LoveDays {
     private guanXuanDays: number
     /**
      * 初始化
-     * @param xiangShiDate 相识日期，格式：2022-11-22
-     * @param guanxuanDate 官宣日期，格式：2022-12-03
+     * @param xiangShiDateTime 相识日期，格式：2022-11-22
+     * @param guanXuanDateTime 官宣日期，格式：2022-12-03
      */
-    constructor(xiangShiDate: string, guanxuanDate: string) {
-        this.xiangShiDate = xiangShiDate
-        this.guanXuanDate = guanxuanDate
+    constructor(xiangShiDateTime: string, guanXuanDateTime: string) {
+        this.xiangShiDateTime = xiangShiDateTime
+        this.guanXuanDateTime = guanXuanDateTime
         const nowTimestamp = new Date().getTime()
-        const xiangShiTimestamp = new Date(xiangShiDate).getTime()
-        const guanxuanTimestamp = new Date(guanxuanDate).getTime()
+        const xiangShiTimestamp = new Date(xiangShiDateTime).getTime()
+        const guanxuanTimestamp = new Date(guanXuanDateTime).getTime()
         this.xiangShiDays = this.getDays(xiangShiTimestamp, nowTimestamp)
         this.guanXuanDays = this.getDays(guanxuanTimestamp, nowTimestamp)
     }
@@ -46,14 +46,16 @@ class LoveDays {
      * @returns 相识日期，格式：2022-11-22
      */
     public getXiangShiDate() {
-        return this.xiangShiDate
+        const date = new Date(this.xiangShiDateTime)
+        return date.getFullYear() + '-' + date.getMonth + '-' + date.getDate()
     }
     /**
     * 获取官宣日期
     * @returns 相识日期，格式：2022-12-03
     */
     public getGuanXuanDate() {
-        return this.guanXuanDate
+        const date = new Date(this.guanXuanDateTime)
+        return date.getFullYear() + '-' + date.getMonth + '-' + date.getDate()
     }
     /**
      * 获取已相识的天数
@@ -68,12 +70,5 @@ class LoveDays {
      */
     public getGuanXuanDays(): number {
         return this.guanXuanDays
-    }
-    /**
-     * 显示天数信息
-     */
-    public show() {
-        console.log(`${this.xiangShiDate}，我们第一次认识，距今 ${this.xiangShiDays} 天`)
-        console.log(`${this.guanXuanDate}，我们官宣了，距今 ${this.guanXuanDays} 天`)
     }
 }
