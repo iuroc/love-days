@@ -23,7 +23,7 @@ var LoveDays = /** @class */ (function () {
         var timestamp = endTimestamp - startTimestamp;
         var days = timestamp / (1000 * 60 * 60 * 24);
         var daysLimit = (days * 1.0).toFixed(1);
-        return parseFloat(daysLimit);
+        return daysLimit;
     };
     /**
      * 获取相识日期
