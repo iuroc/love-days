@@ -1,3 +1,10 @@
+/**
+ * 恋爱天数统计工具
+ * 
+ * @author 欧阳鹏
+ * @blog https://apee.top
+ * @github https://github.com/oyps/love-days
+ */
 class LoveDays {
     /**
      * 相识日期，格式：2022-11-22

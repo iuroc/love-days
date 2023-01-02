@@ -1,3 +1,10 @@
+/**
+ * 恋爱天数统计工具
+ *
+ * @author 欧阳鹏
+ * @blog https://apee.top
+ * @github https://github.com/oyps/love-days
+ */
 var LoveDays = /** @class */ (function () {
     /**
      * 初始化
