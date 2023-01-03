@@ -38,3 +38,11 @@
 .fs-20 {
     font-size: 20px;
 }
+
+@media screen and (max-width: 500px) {
+
+    .xiangShi,
+    .guanXuan {
+        font-size: 20px;
+    }
+}
